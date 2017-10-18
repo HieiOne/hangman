@@ -17,7 +17,6 @@ def randomword(lenght):
 
 def game(tries, name):
     print("It's user", name, "turn")
-    print(list_users[user][1])
     matches = [m for m in guessing if m == "_"]
     if not matches: #check if list is empty
         print("Congraz you won with", tries, "tries")
@@ -56,7 +55,6 @@ for i in range(lenght):
 for _ in range(21+qusers): #to give turns to the other users
     for user in range(len(list_users)): #we use range to iterate between lists
         if list_users[user][1] <= 20:
-            print(list_users[user][1])
             game(list_users[user][1], list_users[user][0])
         else:
             #add message to inform about the lost
