@@ -65,7 +65,7 @@ for i in range(lenght):
 
 try:
     for _ in range(21+qusers): #to give turns to the other users
-        for user in range(len(list_users)): #we use range to iterate between lists
+        for user in range(len(list_users)): #we use range to iterate between lists (enumerate)
             if list_users[user][1] <= 20:
                 game(list_users[user][1], list_users[user][0])
             else:
